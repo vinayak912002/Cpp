@@ -7,3 +7,4 @@ int main(){//entry point of the c++ code.
     std::cout << sum(1,2);
     return 0;
 }
+//we can also perform operator overloading in c++.
