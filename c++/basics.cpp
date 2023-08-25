@@ -1,6 +1,6 @@
 //The basic structure and syntax of C and C++ are same
 //C++ is mostly a superset of C adding Object-Oriented Programming, Exception Handling, Templating, and a more extensive standard library. 
-//namespace is a declarative region that provides scope to the identifiers toprevent name collisions and to divide the code into logial groups.
+//Namespace scope A name that is declared within a namespace, outside of any class or enum definition or function block, is visible from its point of declaration to the end of the namespace. A namespace may be defined in multiple blocks across different files.
 #include <iostream>
 
 int main() {
