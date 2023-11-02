@@ -24,16 +24,38 @@ void Insert(int x)
     }
     head = temp1;
 }
+void InsertatIdx(int data, int index){
+    struct Node* temp = (struct Node*) malloc(sizeof(struct Node*));
+    struct Node* itr = head;
+    temp->data = data;
+    for(int i = 0; i < index - 1; i++){
+        itr = itr->next;
+    }
+    if(itr == NULL) 
+    {
+        printf("invalid index");
+        free(temp);
+        return;
+    }
+
+    temp->next = itr->next;
+    temp->prev = itr;
+    if(itr->next != NULL){
+        itr->next->prev = temp;
+    }
+    itr->next = temp;
+}
 
 void Print()
 {
     struct Node* temp = head;
-    printf("In the forward direction: \n");
+    printf("The list is: ");
     while (temp!=NULL)
     {
         printf("%d ", temp->data);
         temp = temp->next;
     }
+    printf("\n");
 }
 int main()
 {

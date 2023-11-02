@@ -30,6 +30,7 @@ int main()
 {
     int nums[] = {8,9,10,5,4};
     bubbleSort(nums, 5);
+    cout<<"sorted array";
     printArray(nums, 5);
     
     return 0;
